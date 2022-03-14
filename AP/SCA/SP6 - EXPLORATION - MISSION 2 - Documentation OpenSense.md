@@ -7,8 +7,6 @@ version: 1
 
 # SP6 - Documentation OpenSense
 
-[TOC]
-
 ## Installation d'OpenSense
 
 Pour installer OpenSense. J'ai utiliser une machine virtuelle avec la configuration suivante:
