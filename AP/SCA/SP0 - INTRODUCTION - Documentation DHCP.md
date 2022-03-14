@@ -7,8 +7,6 @@ version: 1
 
 # SP0 - INTRODUCTION - Documentation DHCP
 
-[TOC]
-
 ## Installation d'un système Linux serveur de la distribution Debian sur le poste DHCPSCA
 
 ### Installation de Debian
