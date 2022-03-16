@@ -17,13 +17,13 @@ version: 1
 
 Pour installer TrueNAS, je vais utiliser l’ISO de TrueNAS-12. Après le démarrage de l’ISO un menu avec plusieurs choix s’ouvrira.
 
-<img src="file:///home/yutetsudo/.config/marktext/images/2022-03-16-14-31-31-image.png" title="" alt="" data-align="center">
+<img src="assets/2022-03-16-14-46-24-image.png" title="" alt="" data-align="center">
 
 Je choisis l’option « Install/Upgrade » afin d’installer TrueNAS sur le disque de la machine.
 
 Ensuite l’installateur me demandera quel disque choisir pour TrueNAS.
 
-<img src="file:///home/yutetsudo/.config/marktext/images/2022-03-16-14-32-17-image.png" title="" alt="" data-align="center">
+<img title="" src="assets/2022-03-16-14-48-25-image.png" alt="" data-align="center">
 
 Je choisis le disque « da0 » de 8Go pour le système TrueNAS.
 
@@ -33,7 +33,7 @@ Après l'installation du système l’installeur de TrueNAS demande de choisir e
 
 Ici la configuration de démarrage de la machine virtuelle est « Legacy BIOS », alors je choisis « Boot via BIOS ».
 
-<img title="" src="file:///home/yutetsudo/.config/marktext/images/2022-03-16-14-34-15-image.png" alt="" data-align="center">
+<img title="" src="assets/2022-03-16-14-48-44-image.png" alt="" data-align="center">
 
 Maintenant l’installation de TrueNAS est terminé, je peux redémarrer la machine.
 
@@ -49,11 +49,11 @@ NOM  : vtnet0
 IPv4 : 172.16.55.20 / 24
 IPv6 : NON
 
-<img src="file:///home/yutetsudo/.config/marktext/images/2022-03-16-14-37-15-image.png" title="" alt="" data-align="center">
+<img title="" src="assets/2022-03-16-14-49-03-image.png" alt="" data-align="center">
 
 Après la configuration du réseau, je vais paramétrer la route par défaut, ici 172.16.55.253.
 
-<img src="file:///home/yutetsudo/.config/marktext/images/2022-03-16-14-37-42-image.png" title="" alt="" data-align="center">
+<img src="assets/2022-03-16-14-49-14-image.png" title="" alt="" data-align="center">
 
 ### Configuration du RAID-5
 
@@ -61,10 +61,8 @@ Pour configurer le raid-5, je vais utiliser le raid-z de TrueNAS qui est un équ
 Je me connecte sur la page web de TrueNAS : http://172.16.55.20/.
 Sur le menu de gauche je vais sur « Storage > Pools » puis « add » pour rajouter un groupe de disque.
 
-<img title="" src="file:///home/yutetsudo/.config/marktext/images/2022-03-16-14-42-55-image.png" alt="" data-align="center">
+![](assets/2022-03-16-14-50-07-image.png)
 
 Ensuite je choisis le nom de ma « Pool », ici ce sera « RAID ».
 
-
-
-![](/home/yutetsudo/.config/marktext/images/2022-03-16-14-41-57-image.png)
+![](assets/2022-03-16-14-50-58-image.png)
