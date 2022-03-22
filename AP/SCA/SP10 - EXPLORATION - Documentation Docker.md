@@ -7,9 +7,11 @@ version: 1
 
 # Documentation Docker
 
+[TOC]
+
 ## Définition.
 
-- **Docker** : Docker est un service qui permet d’empaqueter une application et ses dépendance dans des conteneur isolé
+- **Docker** : Docker est un service qui permet d’empaqueter une application et ses dépendances dans des conteneurs isolés.
 
 - **Conteneur** : Un conteneur permet d’isoler chaque service (Serveur WEB, Géostationnaire de base de données, application web, …) avec toute leur dépendance. Chaque conteneur peut être relié aux autres par des réseaux virtuels.
 
@@ -23,7 +25,7 @@ version: 1
   • Debian 11 (stable)
   • Debian 10 (oldstable)
 
-  Si une installation de docker existe, désinstaller là :
+  Si une installation de docker existe, désinstaller-la :
 
 ```shell
 sudo apt remove docker docker-engine docker.io containerd runc
@@ -52,7 +54,7 @@ echo \
 $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
-  Vous pouvez effectuer un sudo apt update afin de voir si la connexion au repository de docker c’est effectuer
+  Vous pouvez effectuer un sudo apt update afin de voir si la connexion au repository de docker s’est effectuée.
 
 ```shell
 sudo apt update
@@ -63,7 +65,7 @@ Réception de :5 https://download.docker.com/linux/debian bullseye/stable amd64 
 
 ### Installation de docker
 
-  Maintenant que le repository de docker a été ajouter a la liste d’APT vous pouvez installer docker :
+  Maintenant que le repository de docker a été ajouté à la liste d’APT, vous pouvez installer docker :
 
 ```shell
 sudo apt update
@@ -96,7 +98,7 @@ correctly.
   sudo docker run –name (nom pour le conteneur) -p PortHost:PortConteneur (permet le port forwarding du conteneur) [Image du conteneur] [commande]
   ```
 
-- Docker PS : Docker PS permet de montrer l’état des conteneur installer sur la machine.
+- Docker PS : Docker PS permet de montrer l’état des conteneurs installés sur la machine.
   
   ```shell
   sudo docker ps

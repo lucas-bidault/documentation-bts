@@ -7,17 +7,19 @@ version: 1
 
 # SP0 - INTRODUCTION - Documentation DHCP
 
+[TOC]
+
 ## Installation d'un système Linux serveur de la distribution Debian sur le poste DHCPSCA
 
 ### Installation de Debian
 
 Pour installer Debian sur le serveur, j’utilise l’ISO de Debian 10.9
-Lors du démarrage, je choisie le lecteur de CD pour pouvoir démarrer sur l’ISO de Debian.
+Lors du démarrage, je choisis le lecteur de CD pour pouvoir démarrer sur l’ISO de Debian.
 <img src="assets/840fd81bdff808bfc9201c127278b777fccbba84.png" title="" alt="" data-align="center">
 
 *Capture du GRUB de l’ISO Debian*
-Ensuite je dois entrés les information de la lange, ici je vais choisir le français et le clavier AZERTY.
-Après la configuration du clavier, L’installer de Debian essayera de récupéré une configuration IP via un DHCP. Il y a une erreur car il n’y a pas de DHCP.
+Ensuite je dois entrer les informations de la langue, ici je vais choisir le français et le clavier AZERTY.
+Après la configuration du clavier, L’installateur de Debian essayera de récupérer une configuration IP via un DHCP. Il y a une erreur car il n’y a pas de DHCP.
 <img src="assets/674e46aba4e85fa0ea5c51aeaf032505aa23b354.png" title="" alt="" data-align="center">
 Il faut ensuite cliquer sur « Configurer vous-même le réseau ».
 
@@ -30,18 +32,18 @@ Nom de Machine    : DHCPSCA
 Domaine           : sca5.lan
 ```
 
-Maintenant il faut choisir le mot de passe root `igigabbz` et je crée l’utilisateur `dhcpadmin` avec le mot de passe `uzniiueh`.
+Maintenant il faut choisir le mot de passe root `igigabbz` et créer l’utilisateur `dhcpadmin` avec le mot de passe `uzniiueh`.
 
-Après la configuration des utilisateur, je vais a présent partitionner les disques. Comme méthode de partitionnement j’utilise « Assisté - utiliser tout un disque avec LVM ». 
-Je choisi le disque « NUTANIX VDISK ». Je vais utiliser le schéma de partitionnement « Tout dans une seule partition » et écrire les modification sur les disque. 
-Je peux a présent choisir la taille du disque 21.0 GB et appliquer les changement.
+Après la configuration des utilisateurs, je vais partitionner les disques. Comme méthode de partitionnement j’utilise « Assisté - utiliser tout un disque avec LVM ». 
+Je choisis le disque « NUTANIX VDISK ». Je vais utiliser le schéma de partitionnement « Tout dans une seule partition » et écrire les modifications sur le disque. 
+Je peux choisir la taille du disque 21.0 GB et appliquer les changements.
 
 <img src="assets/043d8eae68676121bbb34967c09b7f05a9805f0d.png" title="" alt="" data-align="center">
 
-> Capture des modification qui seront écrites sur le disque.
+> Capture des modifications qui seront écrites sur le disque.
 
-Maintenant je peux configuré l’outil de gestion des paquets, je choisi le pays du miroir de l’archive `France` et `deb.debian.org`. Il n’y a pas de proxy sur le réseau.
-Après l’installation du système de base, Je choisi d’installer le GRUB sur le disque de démarrage `/dev/sda`.
+Maintenant je peux configurer l’outil de gestion des paquets, je choisis le pays du miroir de l’archive `France` et `deb.debian.org`. Il n’y a pas de proxy sur le réseau.
+Après l’installation du système de base, Je choisis d’installer le GRUB sur le disque de démarrage `/dev/sda`.
 
 ### Installation et configuration du DHCP
 
@@ -113,5 +115,3 @@ option routers 192.168.5.126;
 range 192.168.5.97 192.168.5.125;
 }
 ```
-
-

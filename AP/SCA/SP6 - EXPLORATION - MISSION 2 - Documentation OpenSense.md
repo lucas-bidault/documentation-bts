@@ -5,11 +5,13 @@ date: 29/11/2021
 version: 1
 ---
 
-# SP6 - Documentation OpenSense
+# SP0 - INTRODUCTION - Documentation TrueNasSP6 - Documentation OpenSense
+
+[TOC]
 
 ## Installation d'OpenSense
 
-Pour installer OpenSense. J'ai utiliser une machine virtuelle avec la configuration suivante:
+Pour installer OpenSense, j'ai utilisé une machine virtuelle avec la configuration suivante:
 
 - HDD  : 128 Go
 
@@ -19,15 +21,15 @@ Pour installer OpenSense. J'ai utiliser une machine virtuelle avec la configurat
 
 - NET  : Vlan 56 et 52
 
-Pour l'installation, je démarre sur le CD, puis je me connecte avec l'utilisateur `root` et le mot de passe `opensense`
+Pour l'installation, je démarre sur le CD puis je me connecte avec l'utilisateur `root` et le mot de passe `opensense`
 
 <img title="" src="assets/4a166fabdbc8f7e5374434ae7c0062bb8f9cb808.png" alt="" data-align="center">
 
-Ensuite, je sélectionne l'option `8` sur le menu. Ensuite j'entre la commande `opnsense-installer`
+Ensuite, je sélectionne l'option `8` sur le menu, j'entre la commande `opnsense-installer`
 
 <img src="assets/3e6338cd960fb5d68b8b96a1fedc87d973903a0d.png" title="" alt="" data-align="center">
 
-Maintenant que l'installation est lancer, je vais choisir `install (UFS)` dans le menu.
+Maintenant que l'installation est lancée, je vais choisir `install (UFS)` dans le menu.
 
 <img src="assets/d6792f974ba2332e8bf574aa2e65cc909ae28045.png" title="" alt="" data-align="center">
 
@@ -43,8 +45,8 @@ Après l'installation du système, l'installateur nous demande de changer le mot
 
 ### Ajout de la règle OpenVPN
 
-Afin de faire fonctionner OpenVPN il faut autoriser le WAN a accéder au port 1194.
-Pour se faire il faut aller sur le menu de droite. Dans l’onglet `Pare-feu > Règles > WAN`.
+Afin de faire fonctionner OpenVPN il faut autoriser le WAN à accéder au port 1194.
+Pour se faire, il faut aller sur le menu de droite. Dans l’onglet `Pare-feu > Règles > WAN`.
 
 <img src="assets/91481960e12b083db9e7144b09f3d4f2cc4c44bc.png" title="" alt="" data-align="center">
 

@@ -7,11 +7,7 @@ version: 1
 
 # SP0 - INTRODUCTION - Documentation TrueNas
 
-
-
 [TOC]
-
-
 
 ## Installation de TrueNas
 
@@ -31,11 +27,11 @@ L’installeur partitionnera automatiquement le disque « da0 » pour le systèm
 
 Après l'installation du système l’installeur de TrueNAS demande de choisir entre UEFI et BIOS. 
 
-Ici la configuration de démarrage de la machine virtuelle est « Legacy BIOS », alors je choisis « Boot via BIOS ».
+Ici la configuration de démarrage de la machine virtuelle est `Legacy BIOS`, alors je choisis `Boot via BIOS`.
 
 <img title="" src="assets/2022-03-16-14-48-44-image.png" alt="" data-align="center">
 
-Maintenant l’installation de TrueNAS est terminé, je peux redémarrer la machine.
+Maintenant l’installation de TrueNAS est terminée, je peux redémarrer la machine.
 
 ## Configuration de TrueNas
 
