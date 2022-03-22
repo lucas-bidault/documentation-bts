@@ -5,6 +5,8 @@ date: 10/02/2022
 version: 1
 ---
 
+# Metrics Playbook Wiki
+
 ## 1. Table of content
 
 [TOC]
@@ -63,24 +65,24 @@ virtualenv venv -p python3
   ```shell
   pass insert shadow/netbox.blade.sh/token 
   ```
-
-> If you don't have a NetBox token, ask the system team to give a read-only NetBox token.
-> 
-> If your entry already exist but you need to change it, use the `pass edit` command. And if you need to check if the entry is correct, use the `pass` command.
-
-### 4.3. Install python libraries from `requirements.txt`
-
-```shell
-pip install -r requirements.txt
-```
-
-> If the `pip3` command isn't found, please use `pip3` or run the `sudo apt install python3-pip`.
-
-### 4.4. install Ansible roles and collections from `requirements.yml`
-
-```shell
-ansible-galaxy install -r requirements.yml --force
-```
+  
+  > If you don't have a NetBox token, ask the system team to give a read-only NetBox token.
+  > 
+  > If your entry already exist but you need to change it, use the `pass edit` command. And if you need to check if the entry is correct, use the `pass` command.
+  
+  ### 4.3. Install python libraries from `requirements.txt`
+  
+  ```shell
+  pip install -r requirements.txt
+  ```
+  
+  > If the `pip3` command isn't found, please use `pip3` or run the `sudo apt install python3-pip`.
+  
+  ### 4.4. install Ansible roles and collections from `requirements.yml`
+  
+  ```shell
+  ansible-galaxy install -r requirements.yml --force
+  ```
 
 ---
 
@@ -96,8 +98,7 @@ sudo update-ca-certificates
 ```
 
 > If you're having any trouble with the CA being recognized after installation, you might need to point the Python requests module explicitly in the right direction with an environment variable `export REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt`.
-
-For macOS users, open the cert:
+> For macOS users, open the cert:
 
 ```shell
 open roles/blade.common/files/ca/ucs-pa1-ca.crt
@@ -105,7 +106,6 @@ open roles/blade.common/files/ca/ucs-pa1-ca.crt
 
 (macOS) Keychain Access is then open. You can see the cert in the list under the name "UCS PA1 CA", with a red cross on it, since it's untrusted. To trust it, double-click on the certificate, unroll the "Trust" menu and choose "Always Trust" for "When using this certificate".
 It'll automatically set other options to "Always Trust". You can close the window, type your password and you're ready to go.
-
 Last step, or you won't be able to interact with Vault. First, we need to find the location of openssl_cafile using
 
 ```shell
@@ -135,8 +135,7 @@ ansible -i inventories/YOUR_DC/data-metrics.yml -m ping all
 > You can use the -u, --user to specify a user for the SSH connection. Example : `ansible -u root -i inventories/defra01/data-metrics.yml -m ping all`.
 > 
 > You can also specify a role by adding the role name at the end. Example : `ansible -u root -i inventories/defra01/data-metrics.yaml -m ping device_roles_data_clickhouse`.
-
-Deploy all inventories :
+> Deploy all inventories :
 
 ```shell
 for dc in ams1 ch1 dfr1 ny1 pa1 sv2 tx1; ansible-playbook -i inventories/{$dc}/data-metric.yaml -D playbooks/docker.yml -vv; end
@@ -153,7 +152,6 @@ ansible-inventory -i inventories/defra01/data-metrics.yml --graph
 ## 7. Using tags
 
 See each playbook for any tags available.
-
 ---
 
 ## 8. Variables
