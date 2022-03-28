@@ -5,8 +5,6 @@ date: 18/09/20
 version: 2
 ---
 
-
-
 # Installation et Configuration de WordPress
 
 [TOC]
@@ -27,15 +25,13 @@ version: 2
   
   - phpMyAdmin 4.9.0.1
 
-
-
 ## Installation et Configuration de XAMPP
 
-1. Tout d'abord installez XAMPP https://www.apachefriends.org/fr/download.html, Ensuite ouvrez le `Control Panel` XAMPP.
+1. Tout d'abord installez XAMPP https://www.apachefriends.org/fr/download.html, ensuite ouvrez le `Control Panel` XAMPP.
    
    <img src="file:///home/yutetsudo/.config/marktext/images/2022-03-24-19-38-14-image.png" title="" alt="" data-align="center">
 
-> On peut voir que les services Apache et MySQL sont activées.
+> On peut voir que les services Apache et MySQL sont activés.
 
 2. Après, il faut configurer la base de données. Connectez vous http://localhost/phpmyadmin/
 
@@ -55,14 +51,14 @@ Ensuite, cliquez sur `Télécharger WordPress 5.5.1` afin de télécharger le fi
 
 ## Configuration de WordPress
 
-Connectez vous à l'adresse http://localhost/wordpress/, sur la page de configuration rentrez les information de la base de donner configurer précédemment.
+Connectez vous à l'adresse http://localhost/wordpress/, sur la page de configuration rentrez les informations de la base de données configurée précédemment.
 
 <img src="assets/2022-03-24-19-49-51-image.png" title="" alt="" data-align="center">
 
-Maintenant, indiquez toute information nécessaires comme : (Titre du site, Identifiant et Mot de passe ainsi que la messagerie du propriétaire).
+Maintenant, indiquez toutes informations nécessaires comme : (Titre du site, Identifiant et Mot de passe ainsi que la messagerie du propriétaire).
 
 <img src="assets/2022-03-24-19-51-48-image.png" title="" alt="" data-align="center">
 
-Maintenant que WordPress est installer vous pouvez connecter sur http://localhost/wordpress/.
+Maintenant que WordPress est installé, vous pouvez vous connecter sur http://localhost/wordpress/.
 
-![](assets/2022-03-24-19-53-17-image.png)
+<img src="assets/2022-03-24-19-53-17-image.png" title="" alt="" data-align="center">
